@@ -4,7 +4,7 @@ import Music from '../views/Music.vue'
 import Yakyak from '../views/Yakyak.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
