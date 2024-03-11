@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import IndexView from '../views/IndexView.vue'
-import TestView from '../views/TestView.vue'
-import YELINEEE from '../views/YELineee.vue'
 import Music from '../views/Music.vue'
 import Yakyak from '../views/Yakyak.vue'
 
@@ -12,11 +10,6 @@ const router = createRouter({
       path: '/',
       name: 'index',
       component: IndexView
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: TestView
     },
     {
       path: '/music',
