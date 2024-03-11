@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'VariableFont';
+  src: url('./assets/font/DancingScript-VariableFont_wght.ttf');
+}
