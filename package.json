@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "gsap": "^3.12.4",
     "pinia": "^2.1.7",
     "typeit": "^8.8.3",

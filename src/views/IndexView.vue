@@ -1,70 +1,95 @@
 <template>
-  <div class="w-full h-full">
-    <div class="h-[100vh] w-full bg-slate-200 flex justify-center items-center overflow-hidden" ref="mianPage">
-      <div class="text-center text-[200px] leading-[200px] mix-blend-multiply text-violet-800" style="font-family: VariableFont;">
-        <p ref="text_1" class="select-none" @click="changeColor()">SADless</p>
-        <p ref="text_2" class="select-none" @click="changeFontColor()">HOPEless</p>
-        <p ref="text_3" class="select-none">WORTHless</p>
+  <div class="w-full h-[300vh]" ref="view">
+    <div class="h-[100vh] w-full bg-slate-200 flex justify-center items-center overflow-hidden">
+      <div class="text-[200px] leading-[200px] mix-blend-multiply text-violet-800 relative"
+        style="font-family: VariableFont;">
+        <p class="text_1 select-none" @click="changeColor()">SADless</p>
+        <p class="text_2 select-none" @click="changeFontColor()">HOPEless</p>
+        <p class="text_3 select-none">WORTHless</p>
       </div>
     </div>
-    <div class="w-full h-[100vh]">
-      <!-- <div></div>
-      <img src="../assets/img/IMG_1437.jpg" alt="" class=""> -->
+    <div class="w-full h-[100vh] bg-white">
+      <div class="grid-bg w-full h-full">
+        <test />
+      </div>
     </div>
   </div>
 </template>
 
-<script>
-import TypeIt from 'typeit' 
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-export default {
-  mounted() {
-    // this.$nextTick(() => {
-    //   new TypeIt(this.$refs.text_1, {
-    //     strings: ["SADless","SADlessssss"],
-    //     speed: 100,  
-    //     waitUntilVisible: true,
-    //     cursor: false
-    //   }).go();
-    // });
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const scrollDistance = window.scrollY;
+gsap.registerPlugin(ScrollTrigger);
 
-      this.$refs.text_1.style.fontSize = `${ 200 + scrollDistance / 1}px`; 
-      this.$refs.text_1.style.opacity = 1.1 - scrollDistance / 600;
-      this.$refs.text_1.style.transform = `rotate(-${scrollDistance / 20}deg) translateX(-${scrollDistance * 1.1}px)`;
+const view = ref();
+let ctx;
 
-      this.$refs.text_2.style.fontSize = `${200 + scrollDistance / 0.7}px`; 
-      this.$refs.text_2.style.opacity = 1.2 - scrollDistance/ 600;
-      this.$refs.text_2.style.transform = `rotate(${scrollDistance / 20}deg) translateX(${scrollDistance * 1.2}px)`;
+onMounted(() => {
 
-      this.$refs.text_3.style.fontSize = `${200 + scrollDistance / 0.8}px`; 
-      this.$refs.text_3.style.opacity = 1.3 - scrollDistance / 600;
-      this.$refs.text_3.style.transform = `rotate(-${scrollDistance / 100}deg) translateY(-${scrollDistance * 0.1}px)`;
-    },
+  ctx = gsap.context((self) => {
+    const text_1 = self.selector('.text_1');
+    const text_2 = self.selector('.text_2');
+    const text_3 = self.selector('.text_3');
+    gsap.to(text_1, {
+        xPercent: 80, 
+        opacity: 0.5,
+        scale: 4,
+        duration: 2,
+        scrollTrigger: {
+          trigger: text_1,
+          start: '100% 30%',
+          end: '+=600',
+          scrub: true,
+        },
+      },
+    );
+    gsap.to(text_2, {
+        xPercent: -20,
+        opacity: 0.5,
+        scale: 4,
+        duration: 3,
+        scrollTrigger: {
+          trigger: text_1,
+          start: '100% 30%',
+          end: '+=600',
+          scrub: true,
+        },
+      },
+    );
+    gsap.to(text_3, {
+        xPercent: 100,
+        yPercent: 100,
+        opacity: 0.5,
+        scale: 4,
+        duration: 3,
+        scrollTrigger: {
+          trigger: text_1,
+          start: '100% 30%',
+          end: '+=600',
+          scrub: true,
+        },
+      },
+    );
+    
+  }, view.value); // <- Scope!
+});
 
-    changeColor() {
-      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-      this.$refs.mianPage.style.backgroundColor = randomColor;
-    },
-    changeFontColor() {
-      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-      this.$refs.text_1.style.color = randomColor;
-      this.$refs.text_2.style.color = randomColor;
-      this.$refs.text_3.style.color = randomColor;
-    }
-  }
-}
+onUnmounted(() => {
+  ctx.revert(); // <- Easy Cleanup!
+});
 </script>
 
-<style>
+<style scoped>
 .animated-text {
   transition: transform 0.1s ease, font-size 0.1s ease, opacity 0.1s ease;
+}
+
+.grid-bg {
+  position: absolute;
+  background-image: linear-gradient(to right, #88888844 1px, transparent 1px), linear-gradient(to bottom, #88888844 1px, transparent 1px);
+  background-size: 100px 100px;
+  color: #88888844;
 }
 </style>
