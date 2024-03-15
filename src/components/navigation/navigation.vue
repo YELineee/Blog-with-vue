@@ -99,7 +99,6 @@ ul {
 }
 
 .menu a {
-   font-size: 1vw;
    font-weight: 600;
    color: #ffffff;
    text-decoration: none;
@@ -107,5 +106,24 @@ ul {
 
 .menu ul {
    gap: 20px 60px;
+}
+
+@media screen and (max-width: 768px) {
+   .menu {
+      margin: 20px 0;
+      font-size: 10px;
+      z-index: 100;
+      position: fixed;
+      left: 50%;
+      width: 90%;
+      margin: 20px 0;
+      transform: translatex(-50%);
+      transition: top 0.3s;
+   }
+
+   .menu ul {
+      gap: 20px 30px;
+   }
+   
 }
 </style>

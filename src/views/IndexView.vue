@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-[300vh]" ref="view">
     <div class="h-[100vh] w-full bg-slate-200 flex justify-center items-center overflow-hidden">
-      <div class="text-[200px] leading-[200px] mix-blend-multiply text-violet-800 relative"
+      <div class="text-[80px] md:text-[200px] leading-[80px] md:leading-[200px] mix-blend-multiply text-violet-800 relative"
         style="font-family: VariableFont;">
         <p class="text_1 select-none" @click="changeColor()">SADless</p>
         <p class="text_2 select-none" @click="changeFontColor()">HOPEless</p>
@@ -20,7 +20,7 @@
 import { onMounted, onUnmounted, ref } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import test from '../components/index/test.vue';
 gsap.registerPlugin(ScrollTrigger);
 
 const view = ref();
