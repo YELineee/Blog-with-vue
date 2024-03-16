@@ -108,7 +108,6 @@ export default {
                   start: '0% 75%',
                   end: '25% 50%',
                   scrub: 3,
-                  markers: true
                }
             })
 

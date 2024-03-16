@@ -24,7 +24,7 @@ onMounted(() => {
    gsap.to(".typing", {
       scrollTrigger: {
          trigger: ".mian",
-         start: "5% 0%",
+         start: "0% 0%",
          end: "15% 0%",
          scrub: 1,
       },  
@@ -66,6 +66,7 @@ function createTypeItEffect(element, options = {}) {
       .type("ak", { delay: 300 })
       .go();
 }
+
 </script>
 
 <style scoped>
