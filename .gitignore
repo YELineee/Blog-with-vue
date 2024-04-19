@@ -30,4 +30,4 @@ coverage
 *.tsbuildinfo
 src/assets/blog/data.json
 src/assets/loss
-src/assets/blog/data.ipynb
+src/assets/blog/toUni.ipynb

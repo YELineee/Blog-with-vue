@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const IndexView = () => import('../views/IndexView.vue')
 const Music = () => import('../views/Music.vue')
 const Yakyak = () => import('../views/Yakyak.vue')
+const About = () => import('../views/About.vue')
 
 const router = createRouter({
   history: createWebHistory(),
