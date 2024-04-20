@@ -30,19 +30,35 @@ gsap.registerPlugin(ScrollTrigger)
 const blogData = ref(data)
 
 onMounted(() => {
-   gsap.utils.toArray('.mianPage').forEach((el) => {
-      gsap.to(el, {
-         scrollTrigger: {
-            trigger: el,
-            start: '20% top',
-            end: 'bottom 40%',
-            scrub: 1
-         },
-         scale: 0.9,
-         opacity: 0.8,
-         y: 40
+   if (window.innerWidth > 768) {
+      gsap.utils.toArray('.mianPage').forEach((el) => {
+         gsap.to(el, {
+            scrollTrigger: {
+               trigger: el,
+               start: '20% top',
+               end: 'bottom 40%',
+               scrub: 1,
+            },
+            scale: 0.9,
+            opacity: 0.8,
+            y: 40
+         })
       })
-   })
+   }else{
+      gsap.utils.toArray('.mianPage').forEach((el) => {
+         gsap.to(el, {
+            scrollTrigger: {
+               trigger: el,
+               start: '20% top',
+               end: '300% top',
+               scrub: 1,
+            },
+            scale: 0.3,
+            opacity: 0.8,
+            y: 40
+         })
+      })
+   }//bug here
 })
 </script>
 

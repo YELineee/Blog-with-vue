@@ -3,7 +3,7 @@
       <div class="w-[80vw] h-full">
          <div class="h-[20vh]"></div>
          <div
-            class="text-slate-100 mb-24 text-6xl md:text-[10em] typing"
+            class="text-slate-100 mb-10 md:mb-24 text-6xl md:text-[10em] typing"
             style="font-family: VariableFont"
          ></div>
          <div class="w-full h-[0.2px] bg-slate-100 mb-6"></div>
@@ -22,18 +22,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
+   if (window.innerWidth > 768) {
+      gsap.to('.typing', {
+         scrollTrigger: {
+            trigger: '.mian',
+            start: '0% 0%',
+            end: '10% 30%',
+            scrub: 1
+         },
+         x: '30vw',
+         scale: 2,
+         opacity: 0
+      })
+   }
    createTypeItEffect('.typing')
-   gsap.to('.typing', {
-      scrollTrigger: {
-         trigger: '.mian',
-         start: '0% 0%',
-         end: '10% 30%',
-         scrub: 1
-      },
-      x: '300vw',
-      scale: 9,
-      opacity: 0
-   })
 })
 
 function createTypeItEffect(element, options = {}) {

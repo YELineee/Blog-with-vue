@@ -107,7 +107,7 @@ export default {
                   trigger: item,
                   start: '0% 75%',
                   end: '25% 50%',
-                  scrub: 3,
+                  scrub: 3
                }
             })
 
