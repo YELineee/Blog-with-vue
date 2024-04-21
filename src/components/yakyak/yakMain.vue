@@ -37,28 +37,28 @@ onMounted(() => {
                trigger: el,
                start: '20% top',
                end: 'bottom 40%',
-               scrub: 1,
+               scrub: 1
             },
             scale: 0.9,
             opacity: 0.8,
             y: 40
          })
       })
-   }else{
+   } else {
       gsap.utils.toArray('.mianPage').forEach((el) => {
          gsap.to(el, {
             scrollTrigger: {
                trigger: el,
                start: '20% top',
                end: '300% top',
-               scrub: 1,
+               scrub: 1
             },
             scale: 0.3,
             opacity: 0.8,
             y: 40
          })
       })
-   }//bug here
+   } //bug here
 })
 </script>
 

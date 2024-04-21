@@ -58,7 +58,6 @@ const setCurrentPage = () => {
    }
 }
 
-
 onMounted(() => {
    window.addEventListener('scroll', handleScroll)
    setCurrentPage()
