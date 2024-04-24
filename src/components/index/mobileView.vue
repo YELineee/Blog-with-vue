@@ -37,7 +37,7 @@
                   <div class="w-full h-[0.2rem] bg-black"></div>
                   <div class="py-1 text-4xl md:text-5xl text-black">WTF with my right thigh</div>
                </div>
-               <div class="text-xl md:text-2xl text-center text-black mt-10 p-10 ml-10">
+               <div class="text-xl md:text-2xl text-center text-black mt-10 p-10 md:ml-10">
                   <p>
                      Ola!👋👋👋<br />
                      I am Daniel Pan, A.K,A YELineee<br />

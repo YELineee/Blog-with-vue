@@ -54,18 +54,16 @@
                   draggable="false"
                />
             </div>
-            <div class="h-full w-full text-9xl text-left z-10 font-light" style="font-weight: 100">
-               <p>DAYDReamer</p>
+            <div class="h-full w-full text-9xl text-left z-10 font-light pl-8" style="font-weight: 100">
+               <p>Day DREAmer</p>
                <p>HUMan OBSErver</p>
-               <p>WEB DEVeloper</p>
-               <p>DESIGNer</p>
-               <p>DAYDReamer</p>
-               <p>HUMan OBSErver</p>
-               <p>WEB DEVeloper</p>
-               <p>DESIGNer</p>
+               <p>FRee SPIrit</p>
+               <p>KNOWledge SEEker</p>
+               <p>LOYalist</p>
+               <p>PRAYerful PERson</p>
             </div>
 
-            <div class="h-[60rem] w-full flex absolute z-0 top-[20rem]">
+            <div class="h-[80rem] w-full flex absolute z-0 top-[20rem]">
                <div class="h-full w-full ml-2 text-9xl text-left overflow-hidden">
                   <img
                      class="w-full scale-[1] -translate-y-[60rem]"
@@ -93,7 +91,7 @@
             </div>
          </div>
          <!-- Fourth line -->
-         <div class="h-[70rem] w-full"></div>
+         <div class="h-[80rem] w-full"></div>
          <!-- Fifth line -->
          <div class="h-[20rem] w-full flex">
             <div
