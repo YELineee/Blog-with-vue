@@ -4,7 +4,7 @@
       <ul class="menu__right flex">
          <li><a href="/music" @click="test()">MUSic</a></li>
          <li><a href="/yakyak">YAKYak</a></li>
-         <li><a href="/">ABOut</a></li>
+         <li><a href="/resume">ABOut</a></li>
       </ul>
    </nav>
 </template>
@@ -45,15 +45,10 @@ const setCurrentPage = () => {
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
       })
-   } else if (path === '/yakyak') {
+   } else  {
       menuLeft.style.color = '#ffffff'
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
-      })
-   } else if (path === '/') {
-      menuLeft.style.color = '#000000'
-      menuLinks.forEach((link) => {
-         link.style.color = '#000000'
       })
    }
 }

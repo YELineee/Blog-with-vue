@@ -4,7 +4,9 @@
       style="user-select: none"
    >
       <div class="md:w-1/3 text-white">
-         <div class="text-[160px] mt-[15vh] leading-[0.8]">HanJu<br />Daniel<br />Pan</div>
+         <div class="text-[160px] mt-[15vh] leading-[0.8]" style="font-family: VariableFont">
+            HanJu<br />Daniel<br />Pan
+         </div>
          <div class="text-2xl mt-16 pl-[1vw] leading-normal whitespace-nowrap">
             <p><strong>Phone:</strong> +86 176 7142 4811</p>
             <p><strong>Email:</strong> 1638317920@qq.com</p>
@@ -29,7 +31,10 @@
                </a>
             </div>
          </div>
-         <div class="text-[70px] mt-[30vh] leading-[1] whitespace-nowrap">
+         <div
+            class="text-[70px] mt-[30vh] leading-[1] whitespace-nowrap"
+            style="font-family: VariableFont"
+         >
             <p class="mt-3">
                Web <br />
                Developer /
@@ -47,11 +52,11 @@
 
       <div class="md:w-2/3 md:ml-[10vw] mt-[9vh] text-white">
          <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3 pt-1">Personal</div>
+            <div class="w-1/3 pt-1" style="font-family: VariableFont">Personal</div>
             <div class="text-2xl w-2/3">will update soon...</div>
          </div>
          <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3">Education</div>
+            <div class="w-1/3" style="font-family: VariableFont">Education</div>
             <div class="text-2xl w-1/3">
                <p class="font-semibold">Central South University</p>
                <p class="font-normal italic">Computer Science</p>
@@ -61,7 +66,7 @@
             </div>
          </div>
          <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3">Projects</div>
+            <div class="w-1/3" style="font-family: VariableFont">Projects</div>
             <div class="w-1/3 text-2xl">
                <div>
                   <p class="font-semibold">奇安信 白泽项目组</p>
@@ -74,7 +79,7 @@
             </div>
          </div>
          <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3">Org</div>
+            <div class="w-1/3" style="font-family: VariableFont">Org</div>
             <div class="text-2xl w-1/3">
                <div>
                   <p class="font-semibold">CSU IOS CLUB</p>
@@ -98,7 +103,7 @@
             </div>
          </div>
          <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3">Skills</div>
+            <div class="w-1/3" style="font-family: VariableFont">Skills</div>
             <div class="w-1/3 text-2xl">
                HTML <br />
                CSS<br />
