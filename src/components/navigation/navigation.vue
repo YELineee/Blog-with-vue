@@ -2,7 +2,8 @@
    <nav class="menu flex" :class="{ hide: isScrolled, show: isScrolledUp }">
       <a href="https://github.com/YELineee" class="menu__left"> YELineee </a>
       <ul class="menu__right flex">
-         <li><a href="/music" @click="test()">MUSic</a></li>
+         <li><a href="/">MAIn</a></li>
+         <li><a href="/music">MUSic</a></li>
          <li><a href="/yakyak">YAKYak</a></li>
          <li><a href="/resume">ABOut</a></li>
       </ul>
@@ -45,7 +46,7 @@ const setCurrentPage = () => {
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
       })
-   } else  {
+   } else {
       menuLeft.style.color = '#ffffff'
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
