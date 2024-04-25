@@ -4,7 +4,7 @@
       style="user-select: none"
    >
       <div class="md:w-1/3 text-white">
-         <div class="text-[160px] mt-[15vh] leading-[0.8]" style="font-family: VariableFont">
+         <div class="text-[100px] md:text-[160px] mt-[15vh] leading-[0.8] relative" style="font-family: VariableFont">
             HanJu<br />Daniel<br />Pan
          </div>
          <div class="text-2xl mt-16 pl-[1vw] leading-normal whitespace-nowrap">
@@ -32,7 +32,7 @@
             </div>
          </div>
          <div
-            class="text-[70px] mt-[30vh] leading-[1] whitespace-nowrap"
+            class="text-[50px] md:text-[70px] mt-[30vh] leading-[1] whitespace-nowrap"
             style="font-family: VariableFont"
          >
             <p class="mt-3">
@@ -51,36 +51,51 @@
       </div>
 
       <div class="md:w-2/3 md:ml-[10vw] mt-[9vh] text-white">
-         <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
-            <div class="w-1/3 pt-1" style="font-family: VariableFont">Personal</div>
-            <div class="text-2xl w-2/3">will update soon...</div>
+
+         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
+            <div class="w-1/3 md:pt-1" style="font-family: VariableFont">Personal</div>
+            <div class="text-base md:text-2xl w-2/3">
+               Hello, I'm Daniel pan, A.K.A Yelineee.
+               I'm a junior student studying at CSU. 
+               I enjoy all kinds of wild imaginations, and sometimes my thoughts leap so far that even I can't find the logic in my speech.
+            </div>
          </div>
-         <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
+
+         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
             <div class="w-1/3" style="font-family: VariableFont">Education</div>
-            <div class="text-2xl w-1/3">
+            <div class="text-base md:text-2xl w-1/3">
                <p class="font-semibold">Central South University</p>
                <p class="font-normal italic">Computer Science</p>
             </div>
-            <div class="text-2xl w-1/3 italic text-right font-light">
+            <div class="text-base md:text-2xl w-1/3 italic text-right font-light">
                <p>2021 - 2025</p>
             </div>
          </div>
-         <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
+
+         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
             <div class="w-1/3" style="font-family: VariableFont">Projects</div>
-            <div class="w-1/3 text-2xl">
+            <div class="w-1/3 text-base md:text-2xl">
                <div>
                   <p class="font-semibold">奇安信 白泽项目组</p>
                   <p class="font-normal italic">Vue.js + Ecarts + D3.js</p>
+                  <br/>
+                  <p class="font-semibold https://www.csuligroup.com/CellCom/">CellCom</p>
+                  <p class="font-normal italic">HTML + Sass + JS</p>
                </div>
                <div class="mt-10">And more... need time to organize && update</div>
             </div>
-            <div class="text-2xl w-1/3 italic text-right font-light">
+            <div class="text-base md:text-2xl w-1/3 italic text-right font-light">
+               <p>2023 - 2024</p>
+               <br/>
+               <br/>
                <p>2023 - 2024</p>
             </div>
+            
          </div>
-         <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
+
+         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
             <div class="w-1/3" style="font-family: VariableFont">Org</div>
-            <div class="text-2xl w-1/3">
+            <div class="text-base md:text-2xl w-1/3">
                <div>
                   <p class="font-semibold">CSU IOS CLUB</p>
                   <p class="font-normal italic">Technical Consultant</p>
@@ -91,7 +106,7 @@
                </div>
                <div class="mt-10">FK I don't remember need to update later</div>
             </div>
-            <div class="text-2xl w-1/3 text-right italic">
+            <div class="text-base md:text-2xl w-1/3 text-right italic">
                <div>
                   <p>2022-NOW</p>
                   <br />
@@ -102,9 +117,10 @@
                </div>
             </div>
          </div>
-         <div class="border-t-4 border-white text-5xl mt-20 flex pt-1">
+
+         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
             <div class="w-1/3" style="font-family: VariableFont">Skills</div>
-            <div class="w-1/3 text-2xl">
+            <div class="w-1/3 text-base md:text-2xl">
                HTML <br />
                CSS<br />
                Rust<br />
@@ -116,7 +132,7 @@
                Docker<br />
                Vim<br />
             </div>
-            <div class="w-1/3 text-2xl">
+            <div class="w-1/3 text-base md:text-2xl">
                Vue.js<br />
                Svelte<br />
                TailwindCSS<br /><br />
@@ -127,6 +143,7 @@
                Element-plus<br /><br />
             </div>
          </div>
+
       </div>
    </div>
 </template>
