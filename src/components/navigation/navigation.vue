@@ -46,7 +46,14 @@ const setCurrentPage = () => {
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
       })
-   } else {
+   }
+   else if (path === '/' && window.innerWidth < 768) {
+      menuLeft.style.color = '#000000'
+      menuLinks.forEach((link) => {
+         link.style.color = '#000000'
+      })
+   }
+    else {
       menuLeft.style.color = '#ffffff'
       menuLinks.forEach((link) => {
          link.style.color = '#ffffff'
