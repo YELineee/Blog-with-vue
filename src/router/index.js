@@ -1,32 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const IndexView = () => import('../views/IndexView.vue')
-const Music = () => import('../views/Music.vue')
-const Yakyak = () => import('../views/Yakyak.vue')
-const Resume = () => import('../views/Resume.vue')
-
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
       name: 'index',
-      component: IndexView
+      component: () => import('../views/IndexView.vue')
     },
     {
       path: '/music',
       name: 'music',
-      component: Music
+      component: () => import('../views/Music.vue')
     },
     {
       path: '/yakyak',
       name: 'yakyak',
-      component: Yakyak
+      component: () => import('../views/Yakyak.vue')
     },
     {
       path: '/resume',
       name: 'resume',
-      component: Resume
+      component: () => import('../views/Resume.vue')
+    },
+    {
+      path: '/projects/baize',
+      name: 'projects',
+      component: () => import('../components/projects/baize.vue'),
     }
   ]
 })
