@@ -54,7 +54,10 @@
                   draggable="false"
                />
             </div>
-            <div class="h-full w-full text-9xl text-left z-10 font-light pl-8" style="font-weight: 100">
+            <div
+               class="h-full w-full text-9xl text-left z-10 font-light pl-8"
+               style="font-weight: 100"
+            >
                <p>Day DREAmer</p>
                <p>HUMan OBSErver</p>
                <p>FRee SPIrit</p>
@@ -97,9 +100,7 @@
             <div
                class="h-1/2 w-[15%] border-l-4 border-slate-200 text-5xl text-center font-bold"
             ></div>
-            <div
-               class="h-1/2 w-[30%] border-l-4 border-slate-200 text-6xl text-center text-wrap"
-            >
+            <div class="h-1/2 w-[30%] border-l-4 border-slate-200 text-6xl text-center text-wrap">
                Coming soon...
             </div>
             <div

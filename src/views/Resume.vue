@@ -1,10 +1,13 @@
 <template>
    <div
-      class="grid-bg md:flex justify-center overflow-hidden pb-10 px-[8vw]"
+      class="grid-bg md:flex justify-center overflow-hidden pb-10 px-[6vw]"
       style="user-select: none"
    >
       <div class="md:w-1/3 text-white">
-         <div class="text-[100px] md:text-[160px] mt-[15vh] leading-[0.8] relative" style="font-family: VariableFont">
+         <div
+            class="text-[100px] md:text-[160px] mt-[15vh] leading-[0.8] relative"
+            style="font-family: VariableFont"
+         >
             HanJu<br />Daniel<br />Pan
          </div>
          <div class="text-2xl mt-16 pl-[1vw] leading-normal whitespace-nowrap">
@@ -30,9 +33,28 @@
                   <img class="ml-2" draggable="false" src="../assets/svg/discord.svg" alt="" />
                </a>
             </div>
+
+            <div class="w-full justify-end mt-10 hidden md:block">
+               <div class="w-20 h-10 p-[2px] border-white border-2 flex bg-transparent text-white">
+                  <div
+                     class="w-1/2 h-full text-[26px] flex justify-center items-center text-center"
+                     @click="changeLanguage"
+                     :class="{ activeee: selectedLanguage === 'en' }"
+                  >
+                     EN
+                  </div>
+                  <div
+                     class="w-1/2 h-full text-[26px] flex justify-center items-center text-center"
+                     @click="changeLanguage"
+                     :class="{ activeee: selectedLanguage === 'zh' }"
+                  >
+                     中
+                  </div>
+               </div>
+            </div>
          </div>
          <div
-            class="text-[50px] md:text-[70px] mt-[30vh] leading-[1] whitespace-nowrap"
+            class="text-[50px] md:text-[70px] mt-[20vh] leading-[1] whitespace-nowrap"
             style="font-family: VariableFont"
          >
             <p class="mt-3">
@@ -51,102 +73,40 @@
       </div>
 
       <div class="md:w-2/3 md:ml-[10vw] mt-[9vh] text-white">
-
-         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
-            <div class="w-1/3 md:pt-1" style="font-family: VariableFont">Personal</div>
-            <div class="text-base md:text-2xl w-2/3">
-               Hello, I'm Daniel pan, A.K.A Yelineee.
-               I'm a junior student studying at CSU. 
-               I enjoy all kinds of wild imaginations, and sometimes my thoughts leap so far that even I can't find the logic in my speech.
-            </div>
-         </div>
-
-         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
-            <div class="w-1/3" style="font-family: VariableFont">Education</div>
-            <div class="text-base md:text-2xl w-1/3">
-               <p class="font-semibold">Central South University</p>
-               <p class="font-normal italic">Computer Science</p>
-            </div>
-            <div class="text-base md:text-2xl w-1/3 italic text-right font-light">
-               <p>2021 - 2025</p>
-            </div>
-         </div>
-
-         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
-            <div class="w-1/3" style="font-family: VariableFont">Projects</div>
-            <div class="w-1/3 text-base md:text-2xl">
-               <div>
-                  <p class="font-semibold">奇安信 白泽项目组</p>
-                  <p class="font-normal italic">Vue.js + Ecarts + D3.js</p>
-                  <br/>
-                  <p class="font-semibold https://www.csuligroup.com/CellCom/">CellCom</p>
-                  <p class="font-normal italic">HTML + Sass + JS</p>
+         <div class="w-full justify-end mt-10 block md:hidden">
+            <div class="w-full h-10 p-[2px] border-white border-2 flex bg-transparent text-white">
+               <div
+                  class="w-1/2 h-full text-[26px] flex justify-center items-center text-center"
+                  @click="changeLanguage"
+                  :class="{ activeee: selectedLanguage === 'en' }"
+               >
+                  EN
                </div>
-               <div class="mt-10">And more... need time to organize && update</div>
-            </div>
-            <div class="text-base md:text-2xl w-1/3 italic text-right font-light">
-               <p>2023 - 2024</p>
-               <br/>
-               <br/>
-               <p>2023 - 2024</p>
-            </div>
-            
-         </div>
-
-         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
-            <div class="w-1/3" style="font-family: VariableFont">Org</div>
-            <div class="text-base md:text-2xl w-1/3">
-               <div>
-                  <p class="font-semibold">CSU IOS CLUB</p>
-                  <p class="font-normal italic">Technical Consultant</p>
-               </div>
-               <div class="mt-10">
-                  <p class="font-semibold">CSU Visualization</p>
-                  <p class="font-normal italic">Developer</p>
-               </div>
-               <div class="mt-10">FK I don't remember need to update later</div>
-            </div>
-            <div class="text-base md:text-2xl w-1/3 text-right italic">
-               <div>
-                  <p>2022-NOW</p>
-                  <br />
-               </div>
-               <div class="mt-10">
-                  <p>2023-NOW</p>
-                  <br />
+               <div
+                  class="w-1/2 h-full text-[26px] flex justify-center items-center text-center"
+                  @click="changeLanguage"
+                  :class="{ activeee: selectedLanguage === 'zh' }"
+               >
+                  中
                </div>
             </div>
          </div>
-
-         <div class="border-t-4 border-white text-2xl md:text-5xl mt-20 flex pt-1">
-            <div class="w-1/3" style="font-family: VariableFont">Skills</div>
-            <div class="w-1/3 text-base md:text-2xl">
-               HTML <br />
-               CSS<br />
-               Rust<br />
-               Python<br />
-               JavaScript<br />
-               TypeScript<br /><br />
-
-               Git<br />
-               Docker<br />
-               Vim<br />
-            </div>
-            <div class="w-1/3 text-base md:text-2xl">
-               Vue.js<br />
-               Svelte<br />
-               TailwindCSS<br /><br />
-
-               Echarts<br />
-               D3.js<br />
-               Three.js<br />
-               Element-plus<br /><br />
-            </div>
-         </div>
-
+         <component :is="selectedLanguage === 'zh' ? resumeZh : resumeEn" />
       </div>
    </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import resumeZh from '@/components/resume/resume-zh.vue'
+import resumeEn from '@/components/resume/resume-en.vue'
+
+const selectedLanguage = ref('en')
+
+const changeLanguage = () => {
+   selectedLanguage.value = selectedLanguage.value === 'zh' ? 'en' : 'zh'
+}
+</script>
 
 <style scoped>
 .grid-bg {
@@ -165,5 +125,10 @@
 .mainpage {
    background-color: rgba(255, 255, 255, 0.4);
    backdrop-filter: blur(2px);
+}
+
+.activeee {
+   color: #000000;
+   background: #ffffff;
 }
 </style>
