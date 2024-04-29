@@ -1,6 +1,6 @@
 <template>
    <div class="absolute w-full h-[100vh] bg-black z-50 flex loadingPage">
-      <div class="w-[30vw] m-auto relative">
+      <div class="w-[40vw] md:w-[20vw] m-auto relative">
          <img src="@/assets/img/circle_white.webp" alt="" class="circle" />
          <div
             class="text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-200"
