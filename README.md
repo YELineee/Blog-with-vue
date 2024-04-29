@@ -1,13 +1,6 @@
 # Blog-with-vue
- 
-## Why did this?
 
-## Commit Emoji
+> Its just a blog build with daydream && vue.js
+### View
 
-| type | Emoji |
-|---|---|
-| **Feat** | 🧐 feat: |
-| **Fix** | 😅 fix: | 
-| **Docs** | 🤓 docs: |
-| **perf** | 😎 perf:|
-
+![alt text](public/README/www.yelineee.com_.png)
