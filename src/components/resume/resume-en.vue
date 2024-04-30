@@ -31,10 +31,11 @@
                <div>
                   <a
                      href="/projects/baize"
-                     class="font-semibold underline decoration-transparent hover:decoration-white cursor-pointer"
+                     class="font-semibold underline decoration-1 hover:decoration-2 cursor-pointer"
                   >
                      Qianxin Baize
                   </a>
+                  <p class="font-normal italic">Independent Developer</p>
                </div>
             </div>
             <div class="text-base md:text-2xl w-1/2 italic text-right font-light">
@@ -42,7 +43,7 @@
             </div>
          </div>
          <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
-            <div class="pb-5">
+            <!-- <div class="pb-5">
                <p class="pb-2">Responsibilities:</p>
                <p>
                   Frontend Development and System Research & Development. Led the ground-up
@@ -52,11 +53,11 @@
                   multi-level association and global/local interaction exploration. Developed
                   dynamic hierarchical visualizations for attacker profiles.
                </p>
-            </div>
-            <div class="pb-5">
+            </div> -->
+            <!-- <div class="pb-5">
                <p class="pb-2">TechStack:</p>
                <p>Vue3.0 SVG D3 Echarts</p>
-            </div>
+            </div> -->
          </div>
 
          <!-- <div class="hidden md:block border-dashed border-b-2 border-white"></div> -->
@@ -66,10 +67,11 @@
                <div>
                   <a
                      href="https://www.csuligroup.com/CellCom/Prediction"
-                     class="font-semibold underline decoration-transparent hover:decoration-white cursor-pointer"
+                     class="font-semibold underline decoration-1 hover:decoration-2 cursor-pointer"
                   >
                      CellCom
                   </a>
+                  <p class="font-normal italic">Frontend Developer</p>
                </div>
             </div>
             <div class="text-base md:text-2xl w-1/2 italic text-right font-light">
@@ -77,15 +79,8 @@
             </div>
          </div>
          <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
-            <div class="pb-5">
-               <p class="pb-2">项目地址：</p>
-               <a
-                  href="https://www.csuligroup.com/CellCom/Prediction"
-                  class="underline decoration-transparent hover:decoration-white cursor-pointer"
-                  >www.csuligroup.com/CellCom/Prediction</a
-               >
-            </div>
-            <div class="pb-5">
+
+            <!-- <div class="pb-5">
                <p class="pb-2">Responsibilities:</p>
                <p>
                   Frontend Development, Web Design, and Refactoring. Responsible for redesigning web
@@ -93,11 +88,11 @@
                   enhanced visualization effects and incorporated various animation processes,
                   significantly improving user experience.
                </p>
-            </div>
-            <div class="pb-5">
+            </div> -->
+            <!-- <div class="pb-5">
                <p class="pb-2">TechStack:</p>
                <p>HTML Sass Spring</p>
-            </div>
+            </div> -->
          </div>
       </div>
    </div>
@@ -110,7 +105,7 @@
                <p class="font-semibold">CSU IOS CLUB</p>
                <p class="font-normal italic">Technical Consultant</p>
             </div>
-            <div class="w-1/2 text-right">
+            <div class="w-1/2 text-right italic">
                <p>2022-NOW</p>
             </div>
          </div>
@@ -119,7 +114,7 @@
                <p class="font-semibold">CSU Visualization</p>
                <p class="font-normal italic">Developer</p>
             </div>
-            <div class="w-1/2 text-right">
+            <div class="w-1/2 text-right italic">
                <p>2022-NOW</p>
             </div>
          </div>

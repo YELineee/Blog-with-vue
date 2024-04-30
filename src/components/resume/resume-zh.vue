@@ -26,13 +26,14 @@
                   >
                      奇安信 白泽
                   </a>
+                  <p class="font-normal italic">前端开发</p>
                </div>
             </div>
             <div class="text-base md:text-2xl w-1/2 italic text-right font-light">
                <p>2023 - 2024</p>
             </div>
          </div>
-         <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
+         <!-- <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
             <div class="pb-5">
                <p class="pb-2">项目职责：</p>
                <p>
@@ -47,7 +48,7 @@
                <p class="pb-2">技术栈：</p>
                <p>Vue3.0 SVG D3 Echarts</p>
             </div>
-         </div>
+         </div> -->
          <!-- Project 2 -->
          <div class="flex mt-4 md:mt-10">
             <div class="w-1/2 text-base md:text-2xl">
@@ -58,13 +59,14 @@
                   >
                      CellCom
                   </a>
+                  <p class="font-normal italic">前端开发</p>
                </div>
             </div>
             <div class="text-base md:text-2xl w-1/2 italic text-right font-light">
                <p>2023 - 2024</p>
             </div>
          </div>
-         <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
+         <!-- <div class="text-base md:text-xl w-full md:mt-6 hidden md:block">
             <div class="pb-5">
                <p class="pb-2">项目地址：</p>
                <a
@@ -83,7 +85,7 @@
                <p class="pb-2">技术栈：</p>
                <p>HTML Sass Spring</p>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
 
@@ -95,16 +97,16 @@
                <p class="font-semibold">中南大学苹果实验室</p>
                <p class="font-normal italic">技术顾问</p>
             </div>
-            <div class="w-1/2 text-right">
+            <div class="w-1/2 text-right italic">
                <p>2022-NOW</p>
             </div>
          </div>
          <div class="flex w-full mt-10">
             <div class="w-1/2">
                <p class="font-semibold">中南大学可视化项目组</p>
-               <p class="font-normal italic">开发人员</p>
+               <p class="font-normal italic ">开发人员</p>
             </div>
-            <div class="w-1/2 text-right">
+            <div class="w-1/2 text-right italic">
                <p>2022-NOW</p>
             </div>
          </div>
