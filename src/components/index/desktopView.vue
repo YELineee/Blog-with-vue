@@ -2,9 +2,10 @@
    <div class="w-full h-auto" ref="view">
       <div class="h-[100vh] w-full bg-black flex justify-center items-center overflow-hidden">
          <div
-            class="text-[80px] md:text-[200px] leading-[80px] md:leading-[200px] text-slate-200 relative"
-            style="font-family: VariableFont"
+         class="text-[80px] md:text-[200px] leading-[80px] md:leading-[200px] text-slate-200 relative mt-[15vh]"
+         style="font-family: VariableFont"
          >
+            <img src="@/assets/img/IMG_8091.webp" alt="" class=" absolute w-[700px] -top-72 left-10 -rotate-[0deg] ">
             <p class="text_1 select-none" @click="changeColor()">SADless</p>
             <p class="text_2 select-none" @click="changeFontColor()">HOPEless</p>
             <p class="text_3 select-none">WORTHless</p>
@@ -24,6 +25,9 @@
       >
          <!-- First line  -->
          <div class="h-[20rem] w-full flex">
+            <div class="w-[95vw] h-[30rem] cover_1 -translate-y-4 bg-black absolute">
+
+            </div>
             <div class="h-1/2 w-[15%] border-l-4 border-slate-200 text-5xl text-center font-bold">
                SAD
             </div>
@@ -67,15 +71,17 @@
             </div>
 
             <div class="h-[80rem] w-full flex absolute z-0 top-[20rem]">
-               <div class="h-full w-full ml-2 text-9xl text-left overflow-hidden">
+               <div class="h-full w-full ml-2 overflow-hidden">
+                  <div class="h-full w-full bg-black absolute z-10 cover_2"></div>
                   <img
-                     class="w-full scale-[1] -translate-y-[60rem]"
+                     class="w-full scale-[1] translate-y-[-50vw]"
                      src="@/assets/img/IMG_5089.webp"
                      alt=""
                      draggable="false"
                   />
                </div>
                <div class="h-full w-[30%] ml-2 text-6xl text-center text-wrap overflow-hidden">
+                  <div class="h-full w-full bg-black absolute z-10 cover_2"></div>
                   <img
                      class="w-full scale-[2] -translate-y-48"
                      src="@/assets/img/IMG_5089.webp"
@@ -84,6 +90,7 @@
                   />
                </div>
                <div class="h-full w-[15%] ml-2 text-5xl text-center font-bold overflow-hidden">
+                  <div class="h-full w-full bg-black absolute z-10 cover_2"></div>
                   <img
                      class="w-full scale-[2]"
                      src="@/assets/img/IMG_5089.webp"
@@ -138,6 +145,9 @@ onMounted(() => {
       const text_2 = self.selector('.text_2')
       const text_3 = self.selector('.text_3')
       const rotate = self.selector('.rotate')
+      const cover_1 = self.selector('.cover_1')
+      const cover_2 = self.selector('.cover_2')
+
       gsap.to(text_1, {
          xPercent: 80,
          opacity: 0.5,
@@ -179,7 +189,27 @@ onMounted(() => {
          rotation: 360,
          repeat: -1,
          ease: 'linear',
-         duration: 10 // 这里可以设置旋转一圈所需的时间，单位是秒
+         duration: 10
+      })
+      gsap.to(cover_1, {
+         scaleY: 0, 
+         transformOrigin: "bottom ",
+         duration: 2, 
+         scrollTrigger: {
+            trigger: cover_1,
+            start: 'top 70%', 
+            scrub: false,
+         }
+      })
+      gsap.to(cover_2, {
+         scaleY: 0, 
+         transformOrigin: "bottom ",
+         duration: 2,
+         scrollTrigger: {
+            trigger: cover_2,
+            start: 'top center', 
+            scrub: false,
+         }
       })
    }, view.value) // <- Scope!
 })
