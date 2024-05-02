@@ -8,7 +8,7 @@
             class="text-[100px] md:text-[160px] mt-[15vh] leading-[0.8] relative"
             style="font-family: VariableFont"
          >
-            HanJu<br />Daniel<br />Pan
+            HanJun<br />Daniel<br />Pan
          </div>
          <div class="text-2xl mt-16 pl-[1vw] leading-normal whitespace-nowrap">
             <p><strong>Phone:</strong> +86 176 7142 4811</p>
