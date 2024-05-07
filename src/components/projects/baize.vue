@@ -20,125 +20,21 @@
       <div class="mb-10 md:mt-[10vh] mt-20 text-2xl md:text-5xl w-full border-b-2 border-white">
          项目速览
       </div>
-
-      <div class="text-sm md:text-2xl pl-1 mb-8 md:mb-32">
-         主页
-         <div
-            class="md:h-80 flex overflow-x-scroll hide-scrollbar"
-            @mousedown="mouseDown"
-            @mouseleave="leave"
-            @mouseup="up"
-            @mousemove="move"
-            ref="scrollContainer"
-         >
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-         </div>
-      </div>
-
-      <div class="text-sm md:text-2xl pl-1 mb-1">
-         主页
-         <div
-            class="md:h-80 flex overflow-x-scroll hide-scrollbar"
-            @mousedown="mouseDown"
-            @mouseleave="leave"
-            @mouseup="up"
-            @mousemove="move"
-            ref="scrollContainer"
-         >
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-            <img
-               draggable="false"
-               class="mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-               src="@/assets/img/IMG_5087.webp"
-               alt=""
-            />
-         </div>
-      </div>
+      <imgScorll title="Github" :images="sliderImages" />
+      <imgScorll title="Github" :images="sliderImages" />
+      <imgScorll title="Github" :images="sliderImages" />
+      
    </div>
 </template>
 
-<script>
-export default {
-   data() {
-      return {
-         isDown: false,
-         startX: 0,
-         scrollLeft: 0
-      }
-   },
-   methods: {
-      mouseDown(e) {
-         this.isDown = true
-         this.startX = e.pageX - this.$refs.scrollContainer.offsetLeft
-         this.scrollLeft = this.$refs.scrollContainer.scrollLeft
-      },
-      leave() {
-         this.isDown = false
-      },
-      up() {
-         this.isDown = false
-      },
-      move(e) {
-         if (!this.isDown) return
-         e.preventDefault()
-         const x = e.pageX - this.$refs.scrollContainer.offsetLeft
-         const walk = (x - this.startX) * 1.5 //scroll-fast
-         this.$refs.scrollContainer.scrollLeft = this.scrollLeft - walk
-      }
-   }
-}
+<script setup>
+import imgScorll from './imgScorll.vue'
+const sliderImages = [
+   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 1' },
+   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 2' },
+   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 3' }
+   // Add more images as needed
+]
 </script>
 
 <style scoped>
@@ -148,15 +44,5 @@ export default {
       linear-gradient(to bottom, #efefef44 1px, transparent 1px);
    background-size: 100px 100px;
    /* color: #efefef44; */
-}
-
-.hide-scrollbar {
-   /* Chrome, Edge and Safari */
-   scrollbar-width: none; /* Firefox */
-   -ms-overflow-style: none; /* IE and Edge */
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-   display: none; /* Chrome, Edge and Safari */
 }
 </style>
