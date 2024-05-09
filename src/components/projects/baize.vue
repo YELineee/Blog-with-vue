@@ -20,46 +20,53 @@
       <div class="mb-10 md:mt-[10vh] mt-20 text-2xl md:text-5xl w-full border-b-2 border-white">
          项目速览
       </div>
-      <imgScorll title="Github" :images="githubImages" />
-      <imgScorll title="Home" :images="homeImages" />
-      <imgScorll title="Dashboard" :images="dashImages" />
-      <imgScorll title="Visualization" :images="visImages" />
-      
+
+      <imgScorll_github/>
+      <imgScorll_home/>
+      <imgScorll_dashboard/>
+      <imgScorll_visualization/>
    </div>
 </template>
 
 <script setup>
-import imgScorll from './imgScorll.vue'
-const githubImages = [
-   { src: '/src/assets/img/baize/github_0.webp', },
-   { src: '/src/assets/img/baize/github_1.webp', },
-   { src: '/src/assets/img/baize/github_2.webp', },
-   { src: '/src/assets/img/baize/github_3.webp', },
-   { src: '/src/assets/img/baize/github_4.webp', },
-   { src: '/src/assets/img/baize/github_5.webp', }
-]
-const homeImages = [
-   { src: '/src/assets/img/baize/home_1.webp', },
-   { src: '/src/assets/img/baize/sign_1.webp', },
-   { src: '/src/assets/img/baize/search_1.webp', },
-   { src: '/src/assets/img/baize/search_2.webp', },
-   { src: '/src/assets/img/baize/attcker_1.webp', },
-   { src: '/src/assets/img/baize/attcker_2.webp', },
-]
-const dashImages = [
-   { src: '/src/assets/img/baize/dash_1.webp', },
-   { src: '/src/assets/img/baize/dash_2.webp', },
-   { src: '/src/assets/img/baize/dash_3.webp', },
-   { src: '/src/assets/img/baize/dash_6.webp', },
-   { src: '/src/assets/img/baize/dash_4.webp', }
-]
-const visImages = [
-   { src: '/src/assets/img/baize/hom_1.webp', },
-   { src: '/src/assets/img/baize/hom_2.webp', },
-   { src: '/src/assets/img/baize/hom_3.webp', },
-   { src: '/src/assets/img/baize/hom_4.webp', },
-   { src: '/src/assets/img/baize/hom_5.webp', },
-]
+import imgScorll_dashboard from './imgScorll_dashboard.vue';
+import imgScorll_github from './imgScorll_github.vue';
+import imgScorll_visualization from './imgScorll_visualization.vue';
+import imgScorll_home from './imgScorll_home.vue';
+
+
+
+// import imgScorll from './imgScorll.vue'
+// const githubImages = [
+//    { src: '/src/assets/img/baize/github_0.webp', },
+//    { src: '/src/assets/img/baize/github_1.webp', },
+//    { src: '/src/assets/img/baize/github_2.webp', },
+//    { src: '/src/assets/img/baize/github_3.webp', },
+//    { src: '/src/assets/img/baize/github_4.webp', },
+//    { src: '/src/assets/img/baize/github_5.webp', }
+// ]
+// const homeImages = [
+//    { src: '/src/assets/img/baize/home_1.webp', },
+//    { src: '/src/assets/img/baize/sign_1.webp', },
+//    { src: '/src/assets/img/baize/search_1.webp', },
+//    { src: '/src/assets/img/baize/search_2.webp', },
+//    { src: '/src/assets/img/baize/attcker_1.webp', },
+//    { src: '/src/assets/img/baize/attcker_2.webp', },
+// ]
+// const dashImages = [
+//    { src: '/src/assets/img/baize/dash_1.webp', },
+//    { src: '/src/assets/img/baize/dash_2.webp', },
+//    { src: '/src/assets/img/baize/dash_3.webp', },
+//    { src: '/src/assets/img/baize/dash_6.webp', },
+//    { src: '/src/assets/img/baize/dash_4.webp', }
+// ]
+// const visImages = [
+//    { src: '/src/assets/img/baize/hom_1.webp', },
+//    { src: '/src/assets/img/baize/hom_2.webp', },
+//    { src: '/src/assets/img/baize/hom_3.webp', },
+//    { src: '/src/assets/img/baize/hom_4.webp', },
+//    { src: '/src/assets/img/baize/hom_5.webp', },
+// ]
 </script>
 
 <style scoped>
