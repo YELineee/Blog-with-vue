@@ -67,7 +67,7 @@ export default {
          if (!this.isDown) return
          e.preventDefault()
          const x = e.pageX - this.$refs.scrollContainer.offsetLeft
-         const walk = (x - this.startX) * 1.5 //scroll-fast
+         const walk = (x - this.startX) * 1.2
          this.$refs.scrollContainer.scrollLeft = this.scrollLeft - walk
       }
    }
@@ -76,7 +76,6 @@ export default {
 
 <style scoped>
 .hide-scrollbar {
-   /* Chrome, Edge and Safari */
    scrollbar-width: none; /* Firefox */
    -ms-overflow-style: none; /* IE and Edge */
 }

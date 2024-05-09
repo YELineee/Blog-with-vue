@@ -1,8 +1,8 @@
 <template>
-   <div class="grid-bg text-white pt-[10vh] md:pt-[20vh] px-4 md:px-[5vw] pb-48 overflow-x-hidden">
+   <div class="grid-bg text-white pt-[10vh] md:pt-[10vh] px-4 md:px-[5vw] pb-48 overflow-x-hidden">
       <div class="text-3xl md:text-8xl w-full border-b-2 border-white">奇安信 白泽</div>
 
-      <img class="mt-10 md:mt-20 md:w-2/3 mx-auto" src="@/assets/img/IMG_5087.webp" alt="" />
+      <img class="mt-10 md:mt-20 md:w-2/3 mx-auto" src="@/assets/img/baize/home_1.webp" alt="" />
 
       <div class="mb-10 md:mt-[10vh] mt-20 text-2xl md:text-5xl w-full border-b-2 border-white">
          项目介绍
@@ -20,20 +20,45 @@
       <div class="mb-10 md:mt-[10vh] mt-20 text-2xl md:text-5xl w-full border-b-2 border-white">
          项目速览
       </div>
-      <imgScorll title="Github" :images="sliderImages" />
-      <imgScorll title="Github" :images="sliderImages" />
-      <imgScorll title="Github" :images="sliderImages" />
+      <imgScorll title="Github" :images="githubImages" />
+      <imgScorll title="Home" :images="homeImages" />
+      <imgScorll title="Dashboard" :images="dashImages" />
+      <imgScorll title="Visualization" :images="visImages" />
       
    </div>
 </template>
 
 <script setup>
 import imgScorll from './imgScorll.vue'
-const sliderImages = [
-   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 1' },
-   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 2' },
-   { src: '/src/assets/img/IMG_5087.webp', alt: 'Image 3' }
-   // Add more images as needed
+const githubImages = [
+   { src: '/src/assets/img/baize/github_0.webp', },
+   { src: '/src/assets/img/baize/github_1.webp', },
+   { src: '/src/assets/img/baize/github_2.webp', },
+   { src: '/src/assets/img/baize/github_3.webp', },
+   { src: '/src/assets/img/baize/github_4.webp', },
+   { src: '/src/assets/img/baize/github_5.webp', }
+]
+const homeImages = [
+   { src: '/src/assets/img/baize/home_1.webp', },
+   { src: '/src/assets/img/baize/sign_1.webp', },
+   { src: '/src/assets/img/baize/search_1.webp', },
+   { src: '/src/assets/img/baize/search_2.webp', },
+   { src: '/src/assets/img/baize/attcker_1.webp', },
+   { src: '/src/assets/img/baize/attcker_2.webp', },
+]
+const dashImages = [
+   { src: '/src/assets/img/baize/dash_1.webp', },
+   { src: '/src/assets/img/baize/dash_2.webp', },
+   { src: '/src/assets/img/baize/dash_3.webp', },
+   { src: '/src/assets/img/baize/dash_6.webp', },
+   { src: '/src/assets/img/baize/dash_4.webp', }
+]
+const visImages = [
+   { src: '/src/assets/img/baize/hom_1.webp', },
+   { src: '/src/assets/img/baize/hom_2.webp', },
+   { src: '/src/assets/img/baize/hom_3.webp', },
+   { src: '/src/assets/img/baize/hom_4.webp', },
+   { src: '/src/assets/img/baize/hom_5.webp', },
 ]
 </script>
 
