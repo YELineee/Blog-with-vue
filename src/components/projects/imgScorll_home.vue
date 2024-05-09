@@ -15,14 +15,12 @@
          @mousemove="move"
          ref="scrollContainer"
       >
-         <img
-            v-for="(image, index) in imageList"
-            :key="index"
-            draggable="false"
-            class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full"
-            :src="image.src"
-            :alt="image.alt"
-         />
+      <img src="@/assets/img/baize/home_1.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
+      <img src="@/assets/img/baize/sign_1.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
+      <img src="@/assets/img/baize/search_1.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
+      <img src="@/assets/img/baize/search_2.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
+      <img src="@/assets/img/baize/attcker_1.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
+      <img src="@/assets/img/baize/attcker_2.webp" alt="" draggable="false" class=" mr-4 md:mr-10 w-2/3 md:w-full h-2/3 md:h-full">
       </div>
    </div>
 </template>
