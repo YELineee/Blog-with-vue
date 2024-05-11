@@ -22,19 +22,19 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-   if (window.innerWidth > 768) {
-      gsap.to('.typing', {
-         scrollTrigger: {
-            trigger: '.mian',
-            start: '0% 0%',
-            end: '10% 30%',
-            scrub: 1
-         },
-         x: '30vw',
-         scale: 2,
-         opacity: 0
-      })
-   }
+   // if (window.innerWidth > 768) {
+   //    gsap.to('.typing', {
+   //       scrollTrigger: {
+   //          trigger: '.mian',
+   //          start: '0% 0%',
+   //          end: '10% 30%',
+   //          scrub: 1
+   //       },
+   //       x: '30vw',
+   //       scale: 2,
+   //       opacity: 0
+   //    })
+   // }
    createTypeItEffect('.typing')
 })
 

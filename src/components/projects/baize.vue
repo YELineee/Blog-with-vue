@@ -13,7 +13,7 @@
             <p>
                从头开始重构原有的Vue2项目，转向使用Vue3版本的白泽项目。在这个新版本中，我们添加了更多的新功能，并引入了新的可视化图表以满足新的需求
             </p>
-            <p class="mt-2 md:mt-10">项目地址：asdasdasdasddsadas</p>
+            <p class="mt-2 md:mt-10">项目地址：xxx</p>
          </div>
       </div>
 
