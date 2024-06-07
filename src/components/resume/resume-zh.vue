@@ -21,7 +21,6 @@
             <div class="w-1/2 text-base md:text-2xl">
                <div>
                   <a
-                     href="/projects/baize"
                      class="font-semibold underline decoration-transparent hover:decoration-white cursor-pointer"
                   >
                      奇安信 白泽

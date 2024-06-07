@@ -23,11 +23,11 @@ const router = createRouter({
       name: 'resume',
       component: () => import('../views/Resume.vue')
     },
-    {
-      path: '/projects/baize',
-      name: 'projects',
-      component: () => import('../components/projects/baize.vue'),
-    }
+    // {
+    //   path: '/projects/baize',
+    //   name: 'projects',
+    //   component: () => import('../components/projects/baize.vue'),
+    // }
   ]
 })
 

@@ -30,7 +30,6 @@
             <div class="w-1/2 text-base md:text-2xl">
                <div>
                   <a
-                     href="/projects/baize"
                      class="font-semibold underline decoration-1 hover:decoration-2 cursor-pointer"
                   >
                      Qianxin Baize
